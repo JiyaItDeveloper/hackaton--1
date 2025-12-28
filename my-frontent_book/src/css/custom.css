@@ -1,0 +1,149 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for documentation modules */
+.module-intro {
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.module-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.module-intro p {
+  font-size: 1.2rem;
+  color: #606770;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Enhanced code block styling */
+.code-block-spec {
+  border-left: 3px solid #25c2a0;
+}
+
+/* Table styling for specifications */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.spec-table th,
+.spec-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.spec-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Card-like containers for chapters */
+.chapter-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.chapter-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Navigation enhancement */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sidebar enhancements */
+.sidebar {
+  border-right: 1px solid #ebedf0;
+}
+
+/* Footer enhancements */
+.footer {
+  background-color: #2b3137;
+  color: white;
+}
+
+.footer a {
+  color: #a0a0a0;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Responsive design improvements */
+@media (max-width: 996px) {
+  .module-intro h1 {
+    font-size: 2rem;
+  }
+
+  .module-intro p {
+    font-size: 1rem;
+  }
+}
+
+/* Custom admonition styles */
+.admonition-spec {
+  border-left: 4px solid #25c2a0;
+}
+
+.admonition-requirement {
+  border-left: 4px solid #ff6b6b;
+}
+
+.admonition-architecture {
+  border-left: 4px solid #4ecdc4;
+}
