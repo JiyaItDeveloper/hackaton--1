@@ -1,3 +1,5 @@
+nul
+
 # Dependencies
 node_modules/
 __pycache__/
@@ -51,4 +53,3 @@ logs/
 .specify/
 
 # System files
-nul

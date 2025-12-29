@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Technical Documentation Hub',
-  tagline: 'Comprehensive guides for ROS 2 and Docusaurus-based technical authoring',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -19,18 +19,14 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-book-domain.github.io',
+  // Set the production url of your site here (Vercel deployment)
+  url: 'https://your-vercel-project-url.vercel.app', // Replace with your actual Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // Remove GitHub pages specific configuration for Vercel deployment
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -74,19 +70,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        // Index docs, blog, and pages
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: false,
-        language: 'en',
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -96,29 +79,19 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Documentation Hub',
+        title: 'My Site',
         logo: {
-          alt: 'Documentation Logo',
+          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Modules',
+            label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/ros2/ros2_documentation',
-            label: 'ROS 2',
-            position: 'right',
-          },
-          {
-            href: 'https://docusaurus.io',
-            label: 'Docusaurus',
-            position: 'right',
-          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -130,36 +103,28 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Modules',
+            title: 'Docs',
             items: [
               {
-                label: 'ROS 2 Module',
-                to: '/docs/ros2-module/intro',
-              },
-              {
-                label: 'Docusaurus Module',
-                to: '/docs/docusaurus-module/intro',
-              },
-              {
-                label: 'All Modules',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Resources',
+            title: 'Community',
             items: [
               {
-                label: 'ROS 2 Documentation',
-                href: 'https://docs.ros.org/',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Docusaurus Guide',
-                href: 'https://docusaurus.io/docs',
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Markdown Guide',
-                href: 'https://www.markdownguide.org/',
+                label: 'X',
+                href: 'https://x.com/docusaurus',
               },
             ],
           },
@@ -172,12 +137,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Technical Documentation Hub. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
