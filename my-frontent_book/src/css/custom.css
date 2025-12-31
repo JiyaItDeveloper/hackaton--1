@@ -29,6 +29,128 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Enhanced navigation hover effects */
+.navbar__item,
+.navbar__link,
+.footer__link-item,
+.menu__link {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar__item::after,
+.navbar__link::after,
+.footer__link-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar__item:hover,
+.navbar__link:hover,
+.footer__link-item:hover {
+  color: #667eea !important;
+  transform: translateY(-2px);
+}
+
+.navbar__item:hover::after,
+.navbar__link:hover::after,
+.footer__link-item:hover::after {
+  width: 100%;
+}
+
+/* Specific hover effects for navigation items */
+.navbar__link[href="/docs/intro"]:hover,
+.navbar__link[href="/blog"]:hover,
+.navbar__link[href="https://github.com/ros2/ros2_documentation"]:hover,
+.navbar__link[href="https://docusaurus.io"]:hover,
+.navbar__link[href="https://github.com/facebook/docusaurus"]:hover {
+  color: #667eea !important;
+}
+
+/* Footer link hover effects */
+.footer__link-item:hover {
+  transform: translateX(5px);
+}
+
+/* Colorful hover effects for all headings */
+h1, h2, h3, h4, h5, h6 {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+h1:hover {
+  color: #ff6b6b;
+  text-shadow: 2px 2px 4px rgba(255, 107, 107, 0.3);
+}
+
+h2:hover {
+  color: #4ecdc4;
+  text-shadow: 2px 2px 4px rgba(78, 205, 196, 0.3);
+}
+
+h3:hover {
+  color: #45b7d1;
+  text-shadow: 1px 1px 3px rgba(69, 183, 209, 0.3);
+}
+
+h4:hover {
+  color: #96ceb4;
+  text-shadow: 1px 1px 3px rgba(150, 206, 180, 0.3);
+}
+
+h5:hover {
+  color: #feca57;
+  text-shadow: 1px 1px 3px rgba(254, 202, 87, 0.3);
+}
+
+h6:hover {
+  color: #ff9ff3;
+  text-shadow: 1px 1px 3px rgba(255, 159, 243, 0.3);
+}
+
+/* Enhanced heading styles for chapter content */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  position: relative;
+  padding-left: 10px;
+}
+
+.markdown h1::before {
+  content: "📚";
+  position: absolute;
+  left: 0;
+  color: #ff6b6b;
+  opacity: 0.7;
+}
+
+.markdown h2::before {
+  content: "📖";
+  position: absolute;
+  left: 0;
+  color: #4ecdc4;
+  opacity: 0.7;
+}
+
+.markdown h3::before {
+  content: "📝";
+  position: absolute;
+  left: 0;
+  color: #45b7d1;
+  opacity: 0.7;
+}
+
 /* Custom styles for documentation modules */
 .module-intro {
   padding: 2rem 0;
@@ -121,7 +243,7 @@
 }
 
 .footer a:hover {
-  color: white;
+  color: #667eea;
 }
 
 /* Responsive design improvements */

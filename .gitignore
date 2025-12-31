@@ -53,3 +53,7 @@ logs/
 .specify/
 
 # System files
+
+# Docusaurus
+.docusaurus/
+.cache-loader/

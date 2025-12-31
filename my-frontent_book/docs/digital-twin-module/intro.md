@@ -1,50 +1,60 @@
----
-sidebar_position: 2
----
+# Module 02: The Digital Twin (Gazebo & Unity)
 
-# Module 2: Digital Twin Simulation (Gazebo & Unity)
+Welcome to Module 02 of the Physical AI & Humanoid Robotics course! This module introduces you to **digital twins** — virtual replicas of physical robots that enable safe, cost-effective testing and development.
 
-## Overview
+## Module Overview
 
-Welcome to Module 2 of our robotics development journey! In this module, we'll build upon the ROS 2 foundation established in Module 1 to create a comprehensive digital twin simulation environment. This digital twin will combine physics-accurate simulation in Gazebo with real-time visualization in Unity, all connected through ROS 2 communication infrastructure.
+In this module, you'll learn how to create digital twins of humanoid robots using simulation environments. By the end, you'll understand how to leverage simulation for safe testing before deploying to real hardware.
 
-## Learning Objectives
+## What You'll Learn
 
-By the end of this module, you will be able to:
+This module is organized into four comprehensive chapters:
 
-- Set up and configure Gazebo simulation environment with ROS 2 integration
-- Integrate Unity 3D visualization with ROS 2 communication
-- Import and validate humanoid URDF models in both simulation environments
-- Implement physics simulation with realistic humanoid motion
-- Synchronize state between Gazebo physics and Unity visualization
-- Validate stable humanoid motion in simulated environments
+1. **[Chapter 1: Digital Twins in Physical AI](./chapter-1/fundamentals.md)**
+   Understand the purpose and benefits of digital twins, simulation-first robotics, and compare Gazebo vs Unity platforms.
+
+2. **[Chapter 2: Physics Simulation with Gazebo](./chapter-2/gazebo-physics.md)**
+   Learn physics engine fundamentals, how to load humanoid URDF models, and validate robot motion in simulation.
+
+3. **[Chapter 3: Interaction & Visualization with Unity](./chapter-3/unity-visualization.md)**
+   Explore Unity's visual realism capabilities, human-robot interaction scenarios, and synchronizing robot state between systems.
+
+4. **[Chapter 4: Simulated Sensors](./chapter-4/simulated-sensors.md)**
+   Master sensor simulation including LiDAR, depth cameras, and IMUs, with realistic noise modeling for AI development.
 
 ## Prerequisites
 
 Before starting this module, you should have:
 
-- Completed Module 1 (ROS 2 fundamentals and humanoid modeling)
-- Basic understanding of ROS 2 communication concepts
-- Familiarity with URDF robot modeling
-- Basic knowledge of physics simulation concepts
+- ✅ Completed Module 01 (ROS 2 fundamentals and humanoid modeling)
+- ✅ Basic understanding of ROS 2 communication (nodes, topics, messages)
+- ✅ Familiarity with URDF robot modeling
+- ✅ Basic knowledge of 3D coordinate systems
 
-## Module Structure
+## Learning Objectives
 
-This module is organized into the following chapters:
+By completing this module, you will be able to:
 
-1. **Chapter 1: Gazebo Simulation Fundamentals** - Setting up Gazebo with ROS 2 integration
-2. **Chapter 2: Unity Integration with ROS 2** - Connecting Unity with ROS 2 communication
-3. **Chapter 3: Physics Simulation & Humanoid Motion** - Implementing realistic physics behavior
-4. **Chapter 4: Digital Twin Synchronization** - Synchronizing both simulation environments
-5. **Integration Project: Complete Digital Twin System** - Building the complete system
+- Explain the benefits of digital twins in robotics development
+- Compare simulation platforms (Gazebo vs Unity) and select appropriate tools
+- Understand physics simulation principles for humanoid robots
+- Describe how to synchronize simulation with visualization systems
+- Configure simulated sensors for AI/ML training and testing
+- Apply simulation-first development practices to reduce hardware costs and risks
 
-## Why Digital Twins?
+## Module Philosophy: Simulation-First
 
-Digital twins are virtual replicas of physical systems that enable testing, validation, and development without requiring physical hardware. In robotics, digital twins provide:
+This module emphasizes **simulation-first robotics** — the practice of developing, testing, and validating robot behaviors in virtual environments before deploying to physical hardware. This approach:
 
-- **Safe Testing Environment**: Test complex behaviors without risk of hardware damage
-- **Cost-Effective Development**: Reduce need for physical prototypes
-- **Accelerated Development**: Faster iteration cycles compared to physical testing
-- **Validation Platform**: Verify algorithms before deployment to real robots
+- 🛡️ **Reduces risk** of damaging expensive hardware during development
+- ⚡ **Accelerates iteration** by enabling rapid testing without hardware setup
+- 💰 **Lowers costs** by minimizing physical prototyping requirements
+- 🧪 **Enables comprehensive testing** in scenarios difficult or dangerous to replicate physically
 
-Let's begin our journey into digital twin simulation!
+## Ready to Begin?
+
+Start with [Chapter 1: Digital Twins in Physical AI](./chapter-1/fundamentals.md) to build your foundation in simulation-based robotics development.
+
+---
+
+**Module Structure**: 4 chapters | **Estimated Time**: 3-4 hours | **Difficulty**: Intermediate

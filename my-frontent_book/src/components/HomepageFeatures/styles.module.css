@@ -3,9 +3,62 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureItem {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.featureItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+.featureIcon {
+  font-size: 3rem;
+  margin: 0 auto 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.featureItem:hover .featureIcon {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.featureItem:hover .featureTitle {
+  color: #667eea;
+  transform: translateX(5px);
+}
+
+.featureDescription {
+  color: #666;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.featureItem:hover .featureDescription {
+  color: #444;
 }

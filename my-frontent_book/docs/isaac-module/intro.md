@@ -1,43 +1,60 @@
----
-sidebar_position: 1
----
+# Module 03: The AI-Robot Brain (NVIDIA Isaac™)
 
-# The AI-Robot Brain (NVIDIA Isaac™)
+Welcome to Module 03 of the Physical AI & Humanoid Robotics course! This module introduces you to **NVIDIA Isaac** — the AI-powered perception and navigation system that serves as the "brain" for intelligent humanoid robots.
 
 ## Module Overview
 
-Welcome to **The AI-Robot Brain (NVIDIA Isaac™)** - your comprehensive guide to understanding and implementing NVIDIA Isaac as the perception and navigation "brain" of a humanoid robot using accelerated simulation and AI pipelines.
+In this module, you'll learn how to use NVIDIA Isaac tools to build the perception and navigation layers that enable humanoid robots to understand their environment, generate training data, and navigate autonomously. By the end, you'll understand how Isaac Sim, Isaac ROS, and Nav2 work together to create intelligent robotic systems.
 
-### Module Goal
-This module will teach you NVIDIA Isaac as the intelligent perception and navigation system for humanoid robots, enabling photorealistic simulation, synthetic data generation, and hardware-accelerated AI processing for physical AI applications.
+## What You'll Learn
 
-### Learning Objectives
-By the end of this module, you will be able to:
-1. Understand the NVIDIA Isaac ecosystem and its role in Physical AI systems
-2. Implement photorealistic simulation environments using Isaac Sim
-3. Generate synthetic vision datasets and create training-ready data pipelines
-4. Integrate hardware-accelerated Visual SLAM using Isaac ROS
-5. Adapt Nav2 navigation system for bipedal humanoid robots
-6. Build complete AI pipelines that integrate perception, navigation, and control
+This module is organized into four comprehensive chapters:
 
-### Prerequisites
-- Basic understanding of robotics concepts
-- Familiarity with ROS 2 (covered in Module 1)
-- Understanding of digital twin concepts (covered in Module 2)
-- Basic Python programming knowledge
-- Understanding of computer vision concepts (helpful but not required)
+1. **[Chapter 1: NVIDIA Isaac Ecosystem](./chapter-1/isaac-ecosystem.md)**
+   Understand the NVIDIA Isaac ecosystem, the role of synthetic data in Physical AI, and how Isaac fits into the humanoid robotics technology stack.
 
-### Module Structure
-This module is organized into 4 comprehensive chapters:
+2. **[Chapter 2: Isaac Sim & Synthetic Data Generation](./chapter-2/synthetic-data.md)**
+   Learn how Isaac Sim creates photorealistic simulation environments to generate synthetic training datasets for AI models, including domain randomization techniques.
 
-- **Chapter 1**: NVIDIA Isaac for Physical AI - Introduction to Isaac ecosystem and architecture
-- **Chapter 2**: Isaac Sim & Synthetic Data - Photorealistic environments and synthetic data generation
-- **Chapter 3**: Isaac ROS & Visual SLAM - Hardware-accelerated perception and localization
-- **Chapter 4**: Navigation with Nav2 for Humanoids - Path planning and humanoid-specific navigation
+3. **[Chapter 3: Isaac ROS & Visual SLAM](./chapter-3/visual-slam.md)**
+   Explore hardware-accelerated Visual SLAM with Isaac ROS, sensor fusion for humanoid localization, and how GPU-optimized perception pipelines enable real-time robot awareness.
 
-### Integration with Previous Modules
-This module builds upon the foundations established in:
-- **Module 1 (ROS 2)**: Leverages the ROS 2 communication framework for Isaac ROS integration
-- **Module 2 (Digital Twin)**: Enhances simulation concepts with photorealistic Isaac Sim capabilities
+4. **[Chapter 4: Nav2 Navigation for Humanoids](./chapter-4/navigation.md)**
+   Master autonomous navigation with Nav2, understand humanoid-specific planning challenges, and learn how Isaac perception data flows into navigation planning layers.
 
-Let's begin your journey into the world of NVIDIA Isaac and accelerated AI for robotics!
+## Prerequisites
+
+Before starting this module, you should have:
+
+- ✅ Completed Module 01 (ROS 2 fundamentals and humanoid modeling)
+- ✅ Completed Module 02 (Digital twin concepts and simulation)
+- ✅ Basic understanding of ROS 2 nodes, topics, and URDF models
+- ✅ Familiarity with simulation environments (Gazebo or Unity)
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+
+- Explain the three main components of the NVIDIA Isaac ecosystem (Isaac Sim, Isaac ROS, Isaac Manipulator)
+- Understand how photorealistic simulation enables synthetic data generation for AI training
+- Describe how Isaac ROS provides GPU-accelerated perception pipelines for real-time robot localization
+- Identify the difference between global planning and local planning in Nav2
+- Explain how Isaac perception outputs integrate with Nav2 navigation inputs
+- Apply Isaac tools to build the "AI brain" for autonomous humanoid robots
+
+## Module Philosophy: AI-First Robotics
+
+This module emphasizes **AI-first robotics** — the practice of using GPU-accelerated simulation and perception to enable intelligent robot behavior. This approach:
+
+- 🤖 **Enables AI training** through photorealistic synthetic data generation
+- ⚡ **Accelerates perception** with GPU-optimized Visual SLAM and sensor processing
+- 🧠 **Combines sensing with planning** to create autonomous navigation systems
+- 🎯 **Reduces sim-to-real gap** through high-fidelity simulation and domain randomization
+
+## Ready to Begin?
+
+Start with [Chapter 1: NVIDIA Isaac Ecosystem](./chapter-1/isaac-ecosystem.md) to build your foundation in AI-powered robotics development.
+
+---
+
+**Module Structure**: 4 chapters | **Estimated Time**: 3-4 hours | **Difficulty**: Intermediate to Advanced
