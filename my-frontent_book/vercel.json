@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "InstallCommand": "npm install",
   "framework": "docusaurus-2",
   "nodeVersion": "20.x"
 }
