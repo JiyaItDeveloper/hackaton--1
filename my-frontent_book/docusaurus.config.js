@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://hackaton--1.vercel.app', // Updated for Vercel deployment
+  url: 'https://hackaton-1-28es.vercel.app/', // Updated for Vercel deployment
   // Set the /<baseUrl>/ pathname under which your site is served
   // For Vercel deployment, typically just use '/'
   baseUrl: '/',
