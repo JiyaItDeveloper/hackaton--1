@@ -20,16 +20,13 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docusaurus-example-site.com/',
+  url: 'https://hackaton--1.vercel.app', // Updated for Vercel deployment
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // For Vercel deployment, typically just use '/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'ros2-nervous-system-book', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  // Vercel deployment config.
+  // Remove GitHub pages specific configuration for Vercel deployment
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
